@@ -1,24 +1,9 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Sat Apr 19 00:30:43 2025
-
-@author: Nongnuch
-"""
-
-import streamlit as st
-from tensorflow.keras.applications.mobilenet_v2 import decode_predictions, preprocess_input
-from tensorflow.keras.preprocessing import image
-import numpy as np
-from PIL import Image
-import pickle
-
-# Load model
 with open('model.pkl', 'rb') as f:
     model = pickle.load(f)
 
 
 # App title
-st.title("🖼️ Image Classification with MobileNetV2")
+st.title("🖼️ Image Classification with MobileNetV2BySweZinWinLae")
 
 # File uploader
 uploaded_file = st.file_uploader("Upload an image...", type=["jpg", "jpeg", "png"])
